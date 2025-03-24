@@ -7,12 +7,8 @@ SELECT
     cedente,
     conf,
     conta,
-    CAST(
-        REGEXP_REPLACE(cpf_cnpj_cedente, '[\.\-\/]', '', 'g') AS bigint -- removendo caracteres especiais
-    ) AS cpf_cnpj_cedente,
-    CAST(
-        REGEXP_REPLACE(cpf_cnpj_sacado, '[\.\-\/]', '', 'g') AS bigint --removendo caracteres especiais 
-    ) AS cpf_cnpj_sacado,
+    cpf_cnpj_cedente,
+    cpf_cnpj_sacado,
     cr,
     CAST(
         TO_DATE(data_emissao, 'DD/MM/YYYY') AS date --conversao para tipo de data
@@ -20,12 +16,14 @@ SELECT
     documento,
     etapa,
     historico,
-    id_titulo,
+   CAST(id_titulo AS integer) AS id_titulo, --conversao para tipo inteiro
     id_titulo_original,
     m,
     motivo,
     nosso_numero,
-    op,
+    COALESCE(
+         CAST(NULLIF(op,'') AS integer),0
+    ) AS op,      --conversao para tipo inteiro
     original,
     sacado,
     situacao,
