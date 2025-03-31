@@ -4,18 +4,12 @@ config-version: 2
 
 profile: 'my_dbt_project'  # Referência ao perfil configurado no profiles.yml
 
-source-paths: ["models"]
+model-paths: ["models"]  # Correção do source-paths
 analysis-paths: ["analysis"]
 test-paths: ["tests"]
-data-paths: ["data"]
+seed-paths: ["data"]
 macro-paths: ["macros"]
-seeds:
-  my_dbt_project:
-    file_name: 'path/to/your/seeds.csv'
-    config:
-      materialized: table
 
-# Adicionando configuração para sources.yml
 models:
   my_dbt_project:
     +materialized: view

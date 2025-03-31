@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: public
+    schema: public
+    description: "Schema público do banco de dados"
+    tables:
+      - name: f_titulosemaberto
+        description: "Tabela de títulos em aberto"
+      - name: d_cedentes_fidc
+        description: "Tabela de cedentes"

@@ -1,6 +1,0 @@
-version: 2
-sources:
-  - name: public  # Nome do esquema no banco de dados
-    tables:
-      - name: f_titulosemaberto  # Nome da tabela
-        description: "Tabela contendo informações sobre títulos em aberto"
