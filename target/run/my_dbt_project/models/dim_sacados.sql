@@ -1,5 +1,5 @@
 
-  create view "operacoes"."public"."sacados__dbt_tmp"
+  create view "operacoes"."public"."dim_sacados__dbt_tmp"
     
     
   as (

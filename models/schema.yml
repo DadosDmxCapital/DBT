@@ -15,5 +15,9 @@ sources:
         description: "Tabela de sacados"
       - name: d_sacados
         description: "Tabela de sacados"
+      - name: f_operacoes
+        description: "Tabela de operações"
+      - name: f_operacoes_fidc
+        description: "Tabela de operações do FIDC"
      
 
