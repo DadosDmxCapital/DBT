@@ -19,5 +19,9 @@ sources:
         description: "Tabela de operações"
       - name: f_operacoes_fidc
         description: "Tabela de operações do FIDC"
+      - name: f_operacoes_detalhes
+        description: "Tabela de detalhes das operações"
+      - name: f_operacoes_fidc_detalhes
+        description: "Tabela de detalhes das operações do FIDC"
      
 
