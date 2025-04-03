@@ -7,5 +7,9 @@ sources:
     tables:
       - name: f_titulosemaberto
         description: "Tabela de títulos em aberto"
+      - name: f_titulosemaberto_fidc  # <- Adicionado aqui
+        description: "Tabela de títulos em aberto do FIDC"
       - name: d_cedentes_fidc
         description: "Tabela de cedentes"
+     
+
