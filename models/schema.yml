@@ -11,5 +11,9 @@ sources:
         description: "Tabela de títulos em aberto do FIDC"
       - name: d_cedentes_fidc
         description: "Tabela de cedentes"
+      - name: d_sacados_fidc
+        description: "Tabela de sacados"
+      - name: d_sacados
+        description: "Tabela de sacados"
      
 

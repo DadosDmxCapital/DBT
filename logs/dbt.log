@@ -19912,3 +19912,599 @@ drop view if exists "operacoes"."public"."dim_cedentes_fidic__dbt_backup" cascad
 [0m09:25:44.773150 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019E417CF6D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019E3BB81C10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019E3BB09950>]}
 [0m09:25:44.774151 [debug] [MainThread]: Flushing usage events
 [0m09:25:45.424882 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:01:26.169401 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023241283DD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000232412DBDD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000232412D9490>]}
+
+
+============================== 10:01:26.174418 | 71e631d1-b1a9-41d5-9745-ac5eb422bf3c ==============================
+[0m10:01:26.174418 [info ] [MainThread]: Running with dbt=1.9.2
+[0m10:01:26.175416 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\henrique.soares\\Desktop\\dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': 'C:\\Users\\henrique.soares\\Desktop\\dbt\\logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt clean', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m10:01:26.310946 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '71e631d1-b1a9-41d5-9745-ac5eb422bf3c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002323FE4A3D0>]}
+[0m10:01:26.339933 [debug] [MainThread]: Command `dbt clean` succeeded at 10:01:26.339933 after 0.23 seconds
+[0m10:01:26.339933 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002324109FB90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002323B5D1C10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000232412B7F50>]}
+[0m10:01:26.340932 [debug] [MainThread]: Flushing usage events
+[0m10:01:27.104220 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:01:31.552669 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F76E585950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F76E585A50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F76E587B90>]}
+
+
+============================== 10:01:31.555687 | 78f323a7-1e0f-4cc9-bec3-64cd24cdf282 ==============================
+[0m10:01:31.555687 [info ] [MainThread]: Running with dbt=1.9.2
+[0m10:01:31.556671 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\henrique.soares\\Desktop\\dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'C:\\Users\\henrique.soares\\Desktop\\dbt\\logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m10:01:31.570246 [info ] [MainThread]: dbt version: 1.9.2
+[0m10:01:31.571250 [info ] [MainThread]: python version: 3.11.9
+[0m10:01:31.572234 [info ] [MainThread]: python path: C:\Users\henrique.soares\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\python.exe
+[0m10:01:31.573232 [info ] [MainThread]: os info: Windows-10-10.0.26100-SP0
+[0m10:01:31.831426 [info ] [MainThread]: Using profiles dir at C:\Users\henrique.soares\Desktop\dbt
+[0m10:01:31.832406 [info ] [MainThread]: Using profiles.yml file at C:\Users\henrique.soares\Desktop\dbt\profiles.yml
+[0m10:01:31.833405 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\henrique.soares\Desktop\dbt\dbt_project.yml
+[0m10:01:31.837714 [info ] [MainThread]: adapter type: postgres
+[0m10:01:31.837714 [info ] [MainThread]: adapter version: 1.9.0
+[0m10:01:31.905607 [info ] [MainThread]: Configuration:
+[0m10:01:31.906509 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m10:01:31.907507 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m10:01:31.908508 [info ] [MainThread]: Required dependencies:
+[0m10:01:31.908508 [debug] [MainThread]: Executing "git --help"
+[0m10:01:31.956640 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m10:01:31.956640 [debug] [MainThread]: STDERR: "b''"
+[0m10:01:31.957640 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m10:01:31.957640 [info ] [MainThread]: Connection:
+[0m10:01:31.958643 [info ] [MainThread]:   host: 172.16.0.239
+[0m10:01:31.959642 [info ] [MainThread]:   port: 5432
+[0m10:01:31.959642 [info ] [MainThread]:   user: dmx-op-user
+[0m10:01:31.960640 [info ] [MainThread]:   database: operacoes
+[0m10:01:31.960640 [info ] [MainThread]:   schema: public
+[0m10:01:31.961640 [info ] [MainThread]:   connect_timeout: 10
+[0m10:01:31.961640 [info ] [MainThread]:   role: None
+[0m10:01:31.962643 [info ] [MainThread]:   search_path: None
+[0m10:01:31.966286 [info ] [MainThread]:   keepalives_idle: 0
+[0m10:01:31.967302 [info ] [MainThread]:   sslmode: None
+[0m10:01:31.967302 [info ] [MainThread]:   sslcert: None
+[0m10:01:31.967302 [info ] [MainThread]:   sslkey: None
+[0m10:01:31.968301 [info ] [MainThread]:   sslrootcert: None
+[0m10:01:31.971302 [info ] [MainThread]:   application_name: dbt
+[0m10:01:31.971302 [info ] [MainThread]:   retries: 1
+[0m10:01:31.972302 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m10:01:32.184785 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m10:01:32.412808 [debug] [MainThread]: Using postgres connection "debug"
+[0m10:01:32.412808 [debug] [MainThread]: On debug: select 1 as id
+[0m10:01:32.412808 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m10:01:32.537438 [debug] [MainThread]: SQL status: SELECT 1 in 0.124 seconds
+[0m10:01:32.539377 [debug] [MainThread]: On debug: Close
+[0m10:01:32.541478 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m10:01:32.543203 [info ] [MainThread]: [32mAll checks passed![0m
+[0m10:01:32.546292 [debug] [MainThread]: Command `dbt debug` succeeded at 10:01:32.546292 after 1.05 seconds
+[0m10:01:32.547205 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m10:01:32.548206 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F76E5B7C90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F768841BD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F768841C10>]}
+[0m10:01:32.549202 [debug] [MainThread]: Flushing usage events
+[0m10:01:33.267389 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:01:37.000554 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C4FD87F50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C4F189610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C4F0E0A10>]}
+
+
+============================== 10:01:37.003439 | c5eb088f-33ee-4315-b38a-f3287afe5d5c ==============================
+[0m10:01:37.003439 [info ] [MainThread]: Running with dbt=1.9.2
+[0m10:01:37.004439 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'C:\\Users\\henrique.soares\\Desktop\\dbt\\logs', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\henrique.soares\\Desktop\\dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt run', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m10:01:37.151028 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c5eb088f-33ee-4315-b38a-f3287afe5d5c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C4FDE7090>]}
+[0m10:01:37.190541 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c5eb088f-33ee-4315-b38a-f3287afe5d5c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C4BE19C10>]}
+[0m10:01:37.191541 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m10:01:37.369655 [debug] [MainThread]: checksum: 12b12750b70de726cfd89136b8e24afc3f3e77597a97bff40ab7e5f9b39d5e18, vars: {}, profile: , target: , version: 1.9.2
+[0m10:01:37.370655 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m10:01:37.371655 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'c5eb088f-33ee-4315-b38a-f3287afe5d5c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C4FED9AD0>]}
+[0m10:01:38.000549 [error] [MainThread]: Encountered an error:
+Compilation Error
+  dbt found two sources with the name "public_d_sacados_fidc".
+  
+  Since these resources have the same name, dbt will be unable to find the correct resource
+  when looking for source("public", "d_sacados_fidc").
+  
+  To fix this, change the name of one of these resources:
+  - source.my_dbt_project.public.d_sacados_fidc (models\schema.yml)
+  - source.my_dbt_project.public.d_sacados_fidc (models\schema.yml)
+[0m10:01:38.002787 [debug] [MainThread]: Command `dbt run` failed at 10:01:38.001781 after 1.05 seconds
+[0m10:01:38.002787 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C4FDE7F50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C512C1090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024C4FDB7F50>]}
+[0m10:01:38.002787 [debug] [MainThread]: Flushing usage events
+[0m10:01:38.656702 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:03:04.792837 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002703858E2D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027038585090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027038587E90>]}
+
+
+============================== 10:03:04.796857 | 3059661a-f0d3-4d7f-8a2d-90c1f713cc65 ==============================
+[0m10:03:04.796857 [info ] [MainThread]: Running with dbt=1.9.2
+[0m10:03:04.797838 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\henrique.soares\\Desktop\\dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\henrique.soares\\Desktop\\dbt\\logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt clean', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m10:03:04.899458 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '3059661a-f0d3-4d7f-8a2d-90c1f713cc65', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002703865F2D0>]}
+[0m10:03:04.915459 [debug] [MainThread]: Command `dbt clean` succeeded at 10:03:04.914501 after 0.17 seconds
+[0m10:03:04.915459 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000270327C9950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000270327C8DD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027032841C10>]}
+[0m10:03:04.915459 [debug] [MainThread]: Flushing usage events
+[0m10:03:06.096126 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:03:09.337588 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EED0B85950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EED0BD9CD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EED0BDA610>]}
+
+
+============================== 10:03:09.341589 | 17dc575a-a177-4f38-b7e9-438a177f3978 ==============================
+[0m10:03:09.341589 [info ] [MainThread]: Running with dbt=1.9.2
+[0m10:03:09.342588 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\henrique.soares\\Desktop\\dbt\\logs', 'debug': 'False', 'profiles_dir': 'C:\\Users\\henrique.soares\\Desktop\\dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m10:03:09.354697 [info ] [MainThread]: dbt version: 1.9.2
+[0m10:03:09.355591 [info ] [MainThread]: python version: 3.11.9
+[0m10:03:09.355591 [info ] [MainThread]: python path: C:\Users\henrique.soares\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\python.exe
+[0m10:03:09.356590 [info ] [MainThread]: os info: Windows-10-10.0.26100-SP0
+[0m10:03:09.409143 [info ] [MainThread]: Using profiles dir at C:\Users\henrique.soares\Desktop\dbt
+[0m10:03:09.409143 [info ] [MainThread]: Using profiles.yml file at C:\Users\henrique.soares\Desktop\dbt\profiles.yml
+[0m10:03:09.410156 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\henrique.soares\Desktop\dbt\dbt_project.yml
+[0m10:03:09.411143 [info ] [MainThread]: adapter type: postgres
+[0m10:03:09.412144 [info ] [MainThread]: adapter version: 1.9.0
+[0m10:03:09.479159 [info ] [MainThread]: Configuration:
+[0m10:03:09.479159 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m10:03:09.480144 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m10:03:09.481144 [info ] [MainThread]: Required dependencies:
+[0m10:03:09.482145 [debug] [MainThread]: Executing "git --help"
+[0m10:03:09.522669 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m10:03:09.523667 [debug] [MainThread]: STDERR: "b''"
+[0m10:03:09.524665 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m10:03:09.524665 [info ] [MainThread]: Connection:
+[0m10:03:09.525666 [info ] [MainThread]:   host: 172.16.0.239
+[0m10:03:09.525666 [info ] [MainThread]:   port: 5432
+[0m10:03:09.525666 [info ] [MainThread]:   user: dmx-op-user
+[0m10:03:09.526666 [info ] [MainThread]:   database: operacoes
+[0m10:03:09.526666 [info ] [MainThread]:   schema: public
+[0m10:03:09.527666 [info ] [MainThread]:   connect_timeout: 10
+[0m10:03:09.527666 [info ] [MainThread]:   role: None
+[0m10:03:09.528668 [info ] [MainThread]:   search_path: None
+[0m10:03:09.528668 [info ] [MainThread]:   keepalives_idle: 0
+[0m10:03:09.529667 [info ] [MainThread]:   sslmode: None
+[0m10:03:09.529667 [info ] [MainThread]:   sslcert: None
+[0m10:03:09.530674 [info ] [MainThread]:   sslkey: None
+[0m10:03:09.531667 [info ] [MainThread]:   sslrootcert: None
+[0m10:03:09.531667 [info ] [MainThread]:   application_name: dbt
+[0m10:03:09.531667 [info ] [MainThread]:   retries: 1
+[0m10:03:09.532667 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m10:03:09.712775 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m10:03:09.758792 [debug] [MainThread]: Using postgres connection "debug"
+[0m10:03:09.758792 [debug] [MainThread]: On debug: select 1 as id
+[0m10:03:09.758792 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m10:03:09.908650 [debug] [MainThread]: SQL status: SELECT 1 in 0.149 seconds
+[0m10:03:09.912641 [debug] [MainThread]: On debug: Close
+[0m10:03:09.914641 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m10:03:09.916629 [info ] [MainThread]: [32mAll checks passed![0m
+[0m10:03:09.918641 [debug] [MainThread]: Command `dbt debug` succeeded at 10:03:09.918641 after 0.64 seconds
+[0m10:03:09.919644 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m10:03:09.920627 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EED137C250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EED137C750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EECADF1C10>]}
+[0m10:03:09.921640 [debug] [MainThread]: Flushing usage events
+[0m10:03:10.585348 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:03:12.808191 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AFF648E750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AFF648E010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AFF63895D0>]}
+
+
+============================== 10:03:12.812191 | 3cd277a1-3398-46e3-a0a2-637dc62ba59b ==============================
+[0m10:03:12.812191 [info ] [MainThread]: Running with dbt=1.9.2
+[0m10:03:12.813190 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\henrique.soares\\Desktop\\dbt\\logs', 'profiles_dir': 'C:\\Users\\henrique.soares\\Desktop\\dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m10:03:12.961232 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '3cd277a1-3398-46e3-a0a2-637dc62ba59b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AFF666E110>]}
+[0m10:03:13.001242 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '3cd277a1-3398-46e3-a0a2-637dc62ba59b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AFF2509C50>]}
+[0m10:03:13.002242 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m10:03:13.176090 [debug] [MainThread]: checksum: 12b12750b70de726cfd89136b8e24afc3f3e77597a97bff40ab7e5f9b39d5e18, vars: {}, profile: , target: , version: 1.9.2
+[0m10:03:13.177088 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m10:03:13.178107 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '3cd277a1-3398-46e3-a0a2-637dc62ba59b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AFF670BB90>]}
+[0m10:03:13.862434 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '3cd277a1-3398-46e3-a0a2-637dc62ba59b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AFF2F78350>]}
+[0m10:03:13.904750 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\henrique.soares\Desktop\dbt\target\manifest.json
+[0m10:03:13.908584 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\henrique.soares\Desktop\dbt\target\semantic_manifest.json
+[0m10:03:13.926166 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '3cd277a1-3398-46e3-a0a2-637dc62ba59b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AFF6B81710>]}
+[0m10:03:13.926166 [info ] [MainThread]: Found 3 models, 5 sources, 433 macros
+[0m10:03:13.927166 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3cd277a1-3398-46e3-a0a2-637dc62ba59b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AFF6C23A50>]}
+[0m10:03:13.928166 [info ] [MainThread]: 
+[0m10:03:13.929182 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m10:03:13.929182 [info ] [MainThread]: 
+[0m10:03:13.930166 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m10:03:13.933165 [debug] [ThreadPool]: Acquiring new postgres connection 'list_operacoes'
+[0m10:03:13.987302 [debug] [ThreadPool]: Using postgres connection "list_operacoes"
+[0m10:03:13.988236 [debug] [ThreadPool]: On list_operacoes: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "my_dbt_project", "target_name": "dev", "connection_name": "list_operacoes"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m10:03:13.988236 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:03:14.176583 [debug] [ThreadPool]: SQL status: SELECT 4 in 0.188 seconds
+[0m10:03:14.181686 [debug] [ThreadPool]: On list_operacoes: Close
+[0m10:03:14.185685 [debug] [ThreadPool]: Acquiring new postgres connection 'list_operacoes_public'
+[0m10:03:14.194680 [debug] [ThreadPool]: Using postgres connection "list_operacoes_public"
+[0m10:03:14.194680 [debug] [ThreadPool]: On list_operacoes_public: BEGIN
+[0m10:03:14.195682 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:03:14.317297 [debug] [ThreadPool]: SQL status: BEGIN in 0.122 seconds
+[0m10:03:14.319337 [debug] [ThreadPool]: Using postgres connection "list_operacoes_public"
+[0m10:03:14.320336 [debug] [ThreadPool]: On list_operacoes_public: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "my_dbt_project", "target_name": "dev", "connection_name": "list_operacoes_public"} */
+select
+      'operacoes' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'operacoes' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+    union all
+    select
+      'operacoes' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public'
+  
+[0m10:03:14.351523 [debug] [ThreadPool]: SQL status: SELECT 14 in 0.029 seconds
+[0m10:03:14.352904 [debug] [ThreadPool]: On list_operacoes_public: ROLLBACK
+[0m10:03:14.381758 [debug] [ThreadPool]: On list_operacoes_public: Close
+[0m10:03:14.387747 [debug] [MainThread]: Using postgres connection "master"
+[0m10:03:14.387747 [debug] [MainThread]: On master: BEGIN
+[0m10:03:14.387747 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m10:03:14.536880 [debug] [MainThread]: SQL status: BEGIN in 0.148 seconds
+[0m10:03:14.536880 [debug] [MainThread]: Using postgres connection "master"
+[0m10:03:14.537880 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "my_dbt_project", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m10:03:14.569879 [debug] [MainThread]: SQL status: SELECT 3 in 0.032 seconds
+[0m10:03:14.571879 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3cd277a1-3398-46e3-a0a2-637dc62ba59b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AFF654CD10>]}
+[0m10:03:14.572879 [debug] [MainThread]: On master: ROLLBACK
+[0m10:03:14.575878 [debug] [MainThread]: Using postgres connection "master"
+[0m10:03:14.576879 [debug] [MainThread]: On master: BEGIN
+[0m10:03:14.609879 [debug] [MainThread]: SQL status: BEGIN in 0.033 seconds
+[0m10:03:14.609879 [debug] [MainThread]: On master: COMMIT
+[0m10:03:14.610879 [debug] [MainThread]: Using postgres connection "master"
+[0m10:03:14.610879 [debug] [MainThread]: On master: COMMIT
+[0m10:03:14.613883 [debug] [MainThread]: SQL status: COMMIT in 0.003 seconds
+[0m10:03:14.614885 [debug] [MainThread]: On master: Close
+[0m10:03:14.617883 [debug] [Thread-1 (]: Began running node model.my_dbt_project.dim_cedentes_fidic
+[0m10:03:14.617883 [debug] [Thread-2 (]: Began running node model.my_dbt_project.sacados
+[0m10:03:14.618884 [debug] [Thread-3 (]: Began running node model.my_dbt_project.titulosaberto
+[0m10:03:14.618884 [info ] [Thread-1 (]: 1 of 3 START sql view model public.dim_cedentes_fidic .......................... [RUN]
+[0m10:03:14.619884 [info ] [Thread-2 (]: 2 of 3 START sql view model public.sacados ..................................... [RUN]
+[0m10:03:14.619884 [info ] [Thread-3 (]: 3 of 3 START sql view model public.titulosaberto ............................... [RUN]
+[0m10:03:14.620884 [debug] [Thread-1 (]: Acquiring new postgres connection 'model.my_dbt_project.dim_cedentes_fidic'
+[0m10:03:14.621885 [debug] [Thread-2 (]: Acquiring new postgres connection 'model.my_dbt_project.sacados'
+[0m10:03:14.621885 [debug] [Thread-3 (]: Acquiring new postgres connection 'model.my_dbt_project.titulosaberto'
+[0m10:03:14.621885 [debug] [Thread-1 (]: Began compiling node model.my_dbt_project.dim_cedentes_fidic
+[0m10:03:14.622884 [debug] [Thread-2 (]: Began compiling node model.my_dbt_project.sacados
+[0m10:03:14.622884 [debug] [Thread-3 (]: Began compiling node model.my_dbt_project.titulosaberto
+[0m10:03:14.628393 [debug] [Thread-1 (]: Writing injected SQL for node "model.my_dbt_project.dim_cedentes_fidic"
+[0m10:03:14.631392 [debug] [Thread-2 (]: Writing injected SQL for node "model.my_dbt_project.sacados"
+[0m10:03:14.633391 [debug] [Thread-3 (]: Writing injected SQL for node "model.my_dbt_project.titulosaberto"
+[0m10:03:14.636393 [debug] [Thread-1 (]: Began executing node model.my_dbt_project.dim_cedentes_fidic
+[0m10:03:14.636393 [debug] [Thread-3 (]: Began executing node model.my_dbt_project.titulosaberto
+[0m10:03:14.649393 [debug] [Thread-2 (]: Began executing node model.my_dbt_project.sacados
+[0m10:03:14.666392 [debug] [Thread-1 (]: Writing runtime sql for node "model.my_dbt_project.dim_cedentes_fidic"
+[0m10:03:14.669391 [debug] [Thread-3 (]: Writing runtime sql for node "model.my_dbt_project.titulosaberto"
+[0m10:03:14.672391 [debug] [Thread-2 (]: Writing runtime sql for node "model.my_dbt_project.sacados"
+[0m10:03:14.674395 [debug] [Thread-1 (]: Using postgres connection "model.my_dbt_project.dim_cedentes_fidic"
+[0m10:03:14.675393 [debug] [Thread-3 (]: Using postgres connection "model.my_dbt_project.titulosaberto"
+[0m10:03:14.675393 [debug] [Thread-2 (]: Using postgres connection "model.my_dbt_project.sacados"
+[0m10:03:14.676393 [debug] [Thread-1 (]: On model.my_dbt_project.dim_cedentes_fidic: BEGIN
+[0m10:03:14.676393 [debug] [Thread-3 (]: On model.my_dbt_project.titulosaberto: BEGIN
+[0m10:03:14.677396 [debug] [Thread-2 (]: On model.my_dbt_project.sacados: BEGIN
+[0m10:03:14.678393 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m10:03:14.678393 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m10:03:14.679406 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m10:03:14.811707 [debug] [Thread-2 (]: SQL status: BEGIN in 0.133 seconds
+[0m10:03:14.812708 [debug] [Thread-1 (]: SQL status: BEGIN in 0.134 seconds
+[0m10:03:14.812708 [debug] [Thread-3 (]: SQL status: BEGIN in 0.134 seconds
+[0m10:03:14.813707 [debug] [Thread-2 (]: Using postgres connection "model.my_dbt_project.sacados"
+[0m10:03:14.813707 [debug] [Thread-1 (]: Using postgres connection "model.my_dbt_project.dim_cedentes_fidic"
+[0m10:03:14.814708 [debug] [Thread-3 (]: Using postgres connection "model.my_dbt_project.titulosaberto"
+[0m10:03:14.814708 [debug] [Thread-2 (]: On model.my_dbt_project.sacados: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "model.my_dbt_project.sacados"} */
+
+  create view "operacoes"."public"."sacados__dbt_tmp"
+    
+    
+  as (
+    SELECT id, nome,CAST(NULLIF(REGEXP_REPLACE(cpf_cnpj, '[^0-9]', '', 'g'), '') AS BIGINT) AS cpf_cnpj, endereco, cep, cidade, uf, e_mail, telefone, sms, data_cadastro, timestamp_extracao
+FROM "operacoes"."public"."d_sacados"
+
+UNION  -- Remove registros duplicados automaticamente
+
+SELECT id, nome,CAST(NULLIF(REGEXP_REPLACE(cpf_cnpj, '[^0-9]', '', 'g'), '') AS BIGINT) AS cpf_cnpj,endereco, cep, cidade, uf, e_mail, telefone, sms, data_cadastro, timestamp_extracao
+FROM "operacoes"."public"."d_sacados_fidc"
+  );
+[0m10:03:14.815708 [debug] [Thread-1 (]: On model.my_dbt_project.dim_cedentes_fidic: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "model.my_dbt_project.dim_cedentes_fidic"} */
+
+  create view "operacoes"."public"."dim_cedentes_fidic__dbt_tmp"
+    
+    
+  as (
+    SELECT 
+    nome,
+    CAST(REGEXP_REPLACE(cpf_cnpj, '[^0-9]', '', 'g') AS BIGINT) AS cpf_cnpj,
+    endereco,
+    cep,
+    cidade,
+    uf,
+    email,
+    telefone,
+    gerente,
+    operador,
+    captador,
+    controlador,
+    fator_percentual,
+    advalorem_percentual,
+    TO_DATE(data_cadastro, 'dd/MM/yyyy')::date AS data_cadastro,
+    fonte_captacao,
+    setor,
+    grupo_economico,
+    bloqueado,
+    TO_DATE(primeira_operacao, 'dd/MM/yyyy')::date AS primeira_operacao,
+    CAST(REGEXP_REPLACE(REGEXP_REPLACE(limite_global, '\.', '', 'g'), ',', '.', 'g') AS DECIMAL(18,2)) AS limite_global,
+    CAST(REGEXP_REPLACE(REGEXP_REPLACE(limite_boleto_especial, '\.', '', 'g'), ',', '.', 'g') AS DECIMAL(18,2)) AS limite_boleto_especial,
+    CAST(REGEXP_REPLACE(REGEXP_REPLACE(limite_comissaria, '\.', '', 'g'), ',', '.', 'g') AS DECIMAL(18,2)) AS limite_comissaria,
+    CAST(REGEXP_REPLACE(REGEXP_REPLACE(limite_tranche, '\.', '', 'g'), ',', '.', 'g') AS DECIMAL(18,2)) AS limite_tranche,
+    risco_atual,
+    saldo,
+    vencimento_contrato,
+    id_cedente,
+    timestamp_extracao
+FROM 
+    "operacoes"."public"."d_cedentes_fidc"
+  );
+[0m10:03:14.815708 [debug] [Thread-3 (]: On model.my_dbt_project.titulosaberto: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "model.my_dbt_project.titulosaberto"} */
+
+  create view "operacoes"."public"."titulosaberto__dbt_tmp"
+    
+    
+  as (
+    SELECT 
+    cedente::VARCHAR(8000) AS cedente,
+    conf::VARCHAR(8000) AS conf,
+    conta::VARCHAR(8000) AS conta,
+    CAST(NULLIF(REGEXP_REPLACE(cpf_cnpj_cedente, '[^0-9]', '', 'g'), '') AS BIGINT) AS cpf_cnpj_cedente,
+    CAST(NULLIF(REGEXP_REPLACE(cpf_cnpj_sacado, '[^0-9]', '', 'g'), '') AS BIGINT) AS cpf_cnpj_sacado,
+    cr::VARCHAR(8000) AS cr,
+    TO_DATE(data_emissao, 'DD/MM/YYYY') AS data_emissao, --conversao para data correta
+    documento::VARCHAR(8000) AS documento,
+    etapa::VARCHAR(8000) AS etapa,
+    historico::VARCHAR(8000) AS historico,
+    NULLIF(id_titulo, '')::INT AS id_titulo,   -- EVITA ERRO
+    NULLIF(id_titulo_original, '')::VARCHAR(8000) AS id_titulo_original,
+    m::VARCHAR(8000) AS m,
+    motivo::VARCHAR(8000) AS motivo,
+    nosso_numero::VARCHAR(8000) AS nosso_numero,
+    NULLIF(op,'')::INT AS op,
+    original::VARCHAR(8000) AS original,
+    sacado::VARCHAR(8000) AS sacado,
+    situacao::VARCHAR(8000) AS situacao,
+    tipo::VARCHAR(8000) AS tipo,
+    CAST(
+    REPLACE(REGEXP_REPLACE(valor, '[^0-9,]', '', 'g'), ',', '.') 
+    AS DECIMAL(10,2)
+) AS valor,
+
+CAST(
+    REPLACE(REGEXP_REPLACE(valor_juros, '[^0-9,]', '', 'g'), ',', '.') 
+    AS DECIMAL(10,2)
+) AS valor_juros,
+
+CAST(
+    REPLACE(REGEXP_REPLACE(valor_multa, '[^0-9,]', '', 'g'), ',', '.') 
+    AS DECIMAL(10,2)
+) AS valor_multa,
+
+CAST(
+    REPLACE(REGEXP_REPLACE(valor_tarifas, '[^0-9,]', '', 'g'), ',', '.') 
+    AS DECIMAL(10,2)
+) AS valor_tarifas,
+
+CAST(
+    REPLACE(REGEXP_REPLACE(valor_total, '[^0-9,]', '', 'g'), ',', '.') 
+    AS DECIMAL(10,2)
+) AS valor_total,
+
+CAST(
+    REPLACE(REGEXP_REPLACE(desagio, '[^0-9,]', '', 'g'), ',', '.') 
+    AS DECIMAL(10,2)
+) AS desagio
+
+FROM "operacoes"."public"."f_titulosemaberto"
+
+UNION ALL
+
+SELECT 
+    cedente::VARCHAR(8000) AS cedente,
+    conf::VARCHAR(8000) AS conf,
+    conta::VARCHAR(8000) AS conta,
+    CAST(NULLIF(REGEXP_REPLACE(cpf_cnpj_cedente, '[^0-9]', '', 'g'), '') AS BIGINT) AS cpf_cnpj_cedente,
+    CAST(NULLIF(REGEXP_REPLACE(cpf_cnpj_sacado, '[^0-9]', '', 'g'), '') AS BIGINT) AS cpf_cnpj_sacado,      
+    cr::VARCHAR(8000) AS cr,
+    TO_DATE(data_emissao, 'DD/MM/YYYY') AS data_emissao, --conversao para data correta
+    documento::VARCHAR(8000) AS documento,
+    etapa::VARCHAR(8000) AS etapa,
+    historico::VARCHAR(8000) AS historico,
+    NULLIF(id_titulo, '')::INT AS id_titulo,   -- EVITA ERRO
+    NULLIF(id_titulo_original, '')::VARCHAR(8000) AS id_titulo_original,
+    m::VARCHAR(8000) AS m,
+    motivo::VARCHAR(8000) AS motivo,
+    nosso_numero::VARCHAR(8000) AS nosso_numero,
+    NULLIF(op,'')::INT AS op,
+    original::VARCHAR(8000) AS original,
+    sacado::VARCHAR(8000) AS sacado,
+    situacao::VARCHAR(8000) AS situacao,
+    tipo::VARCHAR(8000) AS tipo,
+CAST(
+    REPLACE(REGEXP_REPLACE(valor, '[^0-9,]', '', 'g'), ',', '.') 
+    AS DECIMAL(10,2)
+) AS valor,
+
+CAST(
+    REPLACE(REGEXP_REPLACE(valor_juros, '[^0-9,]', '', 'g'), ',', '.') 
+    AS DECIMAL(10,2)
+) AS valor_juros,
+
+CAST(
+    REPLACE(REGEXP_REPLACE(valor_multa, '[^0-9,]', '', 'g'), ',', '.') 
+    AS DECIMAL(10,2)
+) AS valor_multa,
+
+CAST(
+    REPLACE(REGEXP_REPLACE(valor_tarifas, '[^0-9,]', '', 'g'), ',', '.') 
+    AS DECIMAL(10,2)
+) AS valor_tarifas,
+
+CAST(
+    REPLACE(REGEXP_REPLACE(valor_total, '[^0-9,]', '', 'g'), ',', '.') 
+    AS DECIMAL(10,2)
+) AS valor_total,
+
+CAST(
+    REPLACE(REGEXP_REPLACE(desagio, '[^0-9,]', '', 'g'), ',', '.') 
+    AS DECIMAL(10,2)
+) AS desagio
+
+FROM "operacoes"."public"."f_titulosemaberto_fidc"
+  );
+[0m10:03:14.844931 [debug] [Thread-2 (]: SQL status: CREATE VIEW in 0.028 seconds
+[0m10:03:14.846955 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.029 seconds
+[0m10:03:14.847953 [debug] [Thread-3 (]: SQL status: CREATE VIEW in 0.030 seconds
+[0m10:03:14.859945 [debug] [Thread-2 (]: Using postgres connection "model.my_dbt_project.sacados"
+[0m10:03:14.862945 [debug] [Thread-1 (]: Using postgres connection "model.my_dbt_project.dim_cedentes_fidic"
+[0m10:03:14.866943 [debug] [Thread-3 (]: Using postgres connection "model.my_dbt_project.titulosaberto"
+[0m10:03:14.866943 [debug] [Thread-2 (]: On model.my_dbt_project.sacados: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "model.my_dbt_project.sacados"} */
+alter table "operacoes"."public"."sacados__dbt_tmp" rename to "sacados"
+[0m10:03:14.867945 [debug] [Thread-1 (]: On model.my_dbt_project.dim_cedentes_fidic: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "model.my_dbt_project.dim_cedentes_fidic"} */
+alter table "operacoes"."public"."dim_cedentes_fidic" rename to "dim_cedentes_fidic__dbt_backup"
+[0m10:03:14.868943 [debug] [Thread-3 (]: On model.my_dbt_project.titulosaberto: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "model.my_dbt_project.titulosaberto"} */
+alter table "operacoes"."public"."titulosaberto" rename to "titulosaberto__dbt_backup"
+[0m10:03:14.880946 [debug] [Thread-2 (]: SQL status: ALTER TABLE in 0.012 seconds
+[0m10:03:14.881944 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.012 seconds
+[0m10:03:14.881944 [debug] [Thread-3 (]: SQL status: ALTER TABLE in 0.013 seconds
+[0m10:03:14.891943 [debug] [Thread-2 (]: On model.my_dbt_project.sacados: COMMIT
+[0m10:03:14.894048 [debug] [Thread-1 (]: Using postgres connection "model.my_dbt_project.dim_cedentes_fidic"
+[0m10:03:14.895946 [debug] [Thread-3 (]: Using postgres connection "model.my_dbt_project.titulosaberto"
+[0m10:03:14.896944 [debug] [Thread-2 (]: Using postgres connection "model.my_dbt_project.sacados"
+[0m10:03:14.896944 [debug] [Thread-1 (]: On model.my_dbt_project.dim_cedentes_fidic: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "model.my_dbt_project.dim_cedentes_fidic"} */
+alter table "operacoes"."public"."dim_cedentes_fidic__dbt_tmp" rename to "dim_cedentes_fidic"
+[0m10:03:14.897944 [debug] [Thread-3 (]: On model.my_dbt_project.titulosaberto: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "model.my_dbt_project.titulosaberto"} */
+alter table "operacoes"."public"."titulosaberto__dbt_tmp" rename to "titulosaberto"
+[0m10:03:14.897944 [debug] [Thread-2 (]: On model.my_dbt_project.sacados: COMMIT
+[0m10:03:14.912086 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.013 seconds
+[0m10:03:14.912086 [debug] [Thread-3 (]: SQL status: ALTER TABLE in 0.014 seconds
+[0m10:03:14.915107 [debug] [Thread-1 (]: On model.my_dbt_project.dim_cedentes_fidic: COMMIT
+[0m10:03:14.916090 [debug] [Thread-3 (]: On model.my_dbt_project.titulosaberto: COMMIT
+[0m10:03:14.917089 [debug] [Thread-1 (]: Using postgres connection "model.my_dbt_project.dim_cedentes_fidic"
+[0m10:03:14.917089 [debug] [Thread-3 (]: Using postgres connection "model.my_dbt_project.titulosaberto"
+[0m10:03:14.917089 [debug] [Thread-1 (]: On model.my_dbt_project.dim_cedentes_fidic: COMMIT
+[0m10:03:14.918090 [debug] [Thread-3 (]: On model.my_dbt_project.titulosaberto: COMMIT
+[0m10:03:14.942314 [debug] [Thread-3 (]: SQL status: COMMIT in 0.024 seconds
+[0m10:03:14.942314 [debug] [Thread-1 (]: SQL status: COMMIT in 0.024 seconds
+[0m10:03:14.943317 [debug] [Thread-2 (]: SQL status: COMMIT in 0.044 seconds
+[0m10:03:14.947331 [debug] [Thread-3 (]: Applying DROP to: "operacoes"."public"."titulosaberto__dbt_backup"
+[0m10:03:14.949318 [debug] [Thread-1 (]: Applying DROP to: "operacoes"."public"."dim_cedentes_fidic__dbt_backup"
+[0m10:03:14.951418 [debug] [Thread-2 (]: Applying DROP to: "operacoes"."public"."sacados__dbt_backup"
+[0m10:03:14.955426 [debug] [Thread-3 (]: Using postgres connection "model.my_dbt_project.titulosaberto"
+[0m10:03:14.955426 [debug] [Thread-1 (]: Using postgres connection "model.my_dbt_project.dim_cedentes_fidic"
+[0m10:03:14.956318 [debug] [Thread-2 (]: Using postgres connection "model.my_dbt_project.sacados"
+[0m10:03:14.957363 [debug] [Thread-3 (]: On model.my_dbt_project.titulosaberto: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "model.my_dbt_project.titulosaberto"} */
+drop view if exists "operacoes"."public"."titulosaberto__dbt_backup" cascade
+[0m10:03:14.957363 [debug] [Thread-1 (]: On model.my_dbt_project.dim_cedentes_fidic: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "model.my_dbt_project.dim_cedentes_fidic"} */
+drop view if exists "operacoes"."public"."dim_cedentes_fidic__dbt_backup" cascade
+[0m10:03:14.958318 [debug] [Thread-2 (]: On model.my_dbt_project.sacados: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "model.my_dbt_project.sacados"} */
+drop view if exists "operacoes"."public"."sacados__dbt_backup" cascade
+[0m10:03:14.979474 [debug] [Thread-2 (]: SQL status: DROP VIEW in 0.020 seconds
+[0m10:03:14.981474 [debug] [Thread-2 (]: On model.my_dbt_project.sacados: Close
+[0m10:03:14.983506 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3cd277a1-3398-46e3-a0a2-637dc62ba59b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AFF6F91BD0>]}
+[0m10:03:14.983506 [info ] [Thread-2 (]: 2 of 3 OK created sql view model public.sacados ................................ [[32mCREATE VIEW[0m in 0.36s]
+[0m10:03:14.984509 [debug] [Thread-2 (]: Finished running node model.my_dbt_project.sacados
+[0m10:03:15.012900 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.054 seconds
+[0m10:03:15.014991 [debug] [Thread-1 (]: On model.my_dbt_project.dim_cedentes_fidic: Close
+[0m10:03:15.014991 [debug] [Thread-3 (]: SQL status: DROP VIEW in 0.057 seconds
+[0m10:03:15.015990 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3cd277a1-3398-46e3-a0a2-637dc62ba59b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AFF69C3850>]}
+[0m10:03:15.017000 [debug] [Thread-3 (]: On model.my_dbt_project.titulosaberto: Close
+[0m10:03:15.017937 [info ] [Thread-1 (]: 1 of 3 OK created sql view model public.dim_cedentes_fidic ..................... [[32mCREATE VIEW[0m in 0.40s]
+[0m10:03:15.018897 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3cd277a1-3398-46e3-a0a2-637dc62ba59b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AFF8041490>]}
+[0m10:03:15.019940 [debug] [Thread-1 (]: Finished running node model.my_dbt_project.dim_cedentes_fidic
+[0m10:03:15.019940 [info ] [Thread-3 (]: 3 of 3 OK created sql view model public.titulosaberto .......................... [[32mCREATE VIEW[0m in 0.40s]
+[0m10:03:15.021907 [debug] [Thread-3 (]: Finished running node model.my_dbt_project.titulosaberto
+[0m10:03:15.024965 [debug] [MainThread]: Using postgres connection "master"
+[0m10:03:15.024965 [debug] [MainThread]: On master: BEGIN
+[0m10:03:15.025966 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m10:03:15.164852 [debug] [MainThread]: SQL status: BEGIN in 0.140 seconds
+[0m10:03:15.165853 [debug] [MainThread]: On master: COMMIT
+[0m10:03:15.165853 [debug] [MainThread]: Using postgres connection "master"
+[0m10:03:15.165853 [debug] [MainThread]: On master: COMMIT
+[0m10:03:15.198880 [debug] [MainThread]: SQL status: COMMIT in 0.032 seconds
+[0m10:03:15.198880 [debug] [MainThread]: On master: Close
+[0m10:03:15.199854 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m10:03:15.199854 [debug] [MainThread]: Connection 'list_operacoes' was properly closed.
+[0m10:03:15.199854 [debug] [MainThread]: Connection 'list_operacoes_public' was properly closed.
+[0m10:03:15.200854 [debug] [MainThread]: Connection 'model.my_dbt_project.dim_cedentes_fidic' was properly closed.
+[0m10:03:15.200854 [debug] [MainThread]: Connection 'model.my_dbt_project.sacados' was properly closed.
+[0m10:03:15.200854 [debug] [MainThread]: Connection 'model.my_dbt_project.titulosaberto' was properly closed.
+[0m10:03:15.201856 [info ] [MainThread]: 
+[0m10:03:15.201856 [info ] [MainThread]: Finished running 3 view models in 0 hours 0 minutes and 1.27 seconds (1.27s).
+[0m10:03:15.202855 [debug] [MainThread]: Command end result
+[0m10:03:15.217972 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\henrique.soares\Desktop\dbt\target\manifest.json
+[0m10:03:15.219971 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\henrique.soares\Desktop\dbt\target\semantic_manifest.json
+[0m10:03:15.225972 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\henrique.soares\Desktop\dbt\target\run_results.json
+[0m10:03:15.225972 [info ] [MainThread]: 
+[0m10:03:15.226971 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m10:03:15.227987 [info ] [MainThread]: 
+[0m10:03:15.228972 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
+[0m10:03:15.231489 [debug] [MainThread]: Command `dbt run` succeeded at 10:03:15.231489 after 2.48 seconds
+[0m10:03:15.232487 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AFF61BD0D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AFF6187D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AFF629F9D0>]}
+[0m10:03:15.232487 [debug] [MainThread]: Flushing usage events
+[0m10:03:15.964890 [debug] [MainThread]: An error was encountered while trying to flush usage events
