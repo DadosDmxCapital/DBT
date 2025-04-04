@@ -23,5 +23,8 @@ sources:
         description: "Tabela de detalhes das operações"
       - name: f_operacoes_fidc_detalhes
         description: "Tabela de detalhes das operações do FIDC"
+      - name: d_cedentes
+        description: "Tabela de cedentes"
+
      
 
