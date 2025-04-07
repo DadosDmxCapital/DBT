@@ -25,6 +25,8 @@ sources:
         description: "Tabela de detalhes das operações do FIDC"
       - name: d_cedentes
         description: "Tabela de cedentes"
+      - name: f_quitados
+        description: "Tabela de quitados"
 
      
 
