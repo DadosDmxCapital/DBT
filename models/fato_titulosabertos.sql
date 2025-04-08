@@ -13,6 +13,7 @@ SELECT
     NULLIF(id_titulo_original, '')::VARCHAR(8000) AS id_titulo_original,
     m::VARCHAR(8000) AS m,
     motivo::VARCHAR(8000) AS motivo,
+    TO_DATE(vencimento, 'DD/MM/YYYY') AS vencimento, --conversao para data correta
     nosso_numero::VARCHAR(8000) AS nosso_numero,
     NULLIF(op,'')::INT AS op,
     original::VARCHAR(8000) AS original,
@@ -68,6 +69,7 @@ SELECT
     NULLIF(id_titulo_original, '')::VARCHAR(8000) AS id_titulo_original,
     m::VARCHAR(8000) AS m,
     motivo::VARCHAR(8000) AS motivo,
+      TO_DATE(vencimento, 'DD/MM/YYYY') AS vencimento, --conversao para data correta
     nosso_numero::VARCHAR(8000) AS nosso_numero,
     NULLIF(op,'')::INT AS op,
     original::VARCHAR(8000) AS original,
