@@ -49,7 +49,6 @@ CAST(
     NULLIF(op, '')::INT AS op,
     situacao::VARCHAR(8000) AS situacao,
     tipo_quitacao::VARCHAR(8000) AS tipo_quitacao,
-    TO_DATE(data_custodia, 'DD/MM/YYYY') AS data_custodia, --conversao para data correta
     op_de_pagamento::VARCHAR(8000) AS op_de_pagamento,
     observacao::VARCHAR(8000) AS observacao,
     conta::VARCHAR(8000) AS conta,
@@ -111,7 +110,6 @@ CAST(
     NULLIF(op, '')::INT AS op,
     situacao::VARCHAR(8000) AS situacao,
     tipo_quitacao::VARCHAR(8000) AS tipo_quitacao,
-    TO_DATE(data_custodia, 'DD/MM/YYYY') AS data_custodia, --conversao para data correta
     op_de_pagamento::VARCHAR(8000) AS op_de_pagamento,
     observacao::VARCHAR(8000) AS observacao,
     conta::VARCHAR(8000) AS conta,

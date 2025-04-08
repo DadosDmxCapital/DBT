@@ -19,7 +19,15 @@ SELECT
     dc.fonte_captacao::VARCHAR(8000) AS fonte_captacao,
     dc.setor::VARCHAR(8000) AS setor,
     dc.grupo_economico::VARCHAR(8000) AS grupo_economico,
-    COALESCE(TO_DATE(dc.primeira_operacao, 'DD/MM/YYYY'), df.primeira_operacao_fidc) AS primeira_operacao,
+    CASE
+        WHEN dc.primeira_operacao IS NULL OR TRIM(dc.primeira_operacao) = '' THEN
+            CASE
+                WHEN df.primeira_operacao_fidc IS NULL THEN NULL
+                ELSE df.primeira_operacao_fidc
+            END
+        ELSE
+            TO_DATE(dc.primeira_operacao, 'DD/MM/YYYY')
+    END AS primeira_operacao,
     CAST(REPLACE(REPLACE(REGEXP_REPLACE(dc.limite_global, '[^0-9,.]', '', 'g'), '.', ''), ',', '.') AS DECIMAL(15, 2)) AS limite_global,
     CAST(REPLACE(REPLACE(REGEXP_REPLACE(dc.limite_boleto_especial, '[^0-9,.]', '', 'g'), '.', ''), ',', '.') AS DECIMAL(15, 2)) AS limite_boleto_especial,
     CAST(REPLACE(REPLACE(REGEXP_REPLACE(dc.limite_comissaria, '[^0-9,.]', '', 'g'), '.', ''), ',', '.') AS DECIMAL(15, 2)) AS limite_comissaria,
@@ -29,12 +37,14 @@ SELECT
     CAST(REPLACE(REPLACE(REGEXP_REPLACE(dc.limite_operacao_clean, '[^0-9,.]', '', 'g'), '.', ''), ',', '.') AS DECIMAL(15, 2)) AS limite_operacao_clean,
     dc.risco_atual::VARCHAR(8000) AS risco_atual,
     CAST(REPLACE(REPLACE(REGEXP_REPLACE(dc.saldo, '[^0-9,.]', '', 'g'), '.', ''), ',', '.') AS DECIMAL(15, 2)) AS saldo,
-    TO_DATE(dc.vencimento_contrato, 'DD-MM-YYYY') AS vencimento_contrato,
     dc.id_cedente::INT AS id_cedente
 FROM "operacoes"."public"."d_cedentes" dc
 LEFT JOIN (
     SELECT
         CAST(NULLIF(REGEXP_REPLACE(cpf_cnpj, '[^0-9]', '', 'g'), '') AS BIGINT) AS cpf_cnpj,
-        TO_DATE(primeira_operacao,'DD-MM-YYYY') AS primeira_operacao_fidc
+        CASE
+            WHEN primeira_operacao IS NULL OR TRIM(primeira_operacao) = '' THEN NULL
+            ELSE TO_DATE(primeira_operacao,'DD-MM-YYYY')
+        END AS primeira_operacao_fidc
     FROM "operacoes"."public"."d_cedentes_fidc"
 ) df ON CAST(NULLIF(REGEXP_REPLACE(dc.cpf_cnpj, '[^0-9]', '', 'g'), '') AS BIGINT) = df.cpf_cnpj
