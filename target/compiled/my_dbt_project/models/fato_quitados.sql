@@ -54,7 +54,7 @@ CAST(
     banco_cobrador::VARCHAR(8000) AS banco_cobrador,
     agencia_cobradora::VARCHAR(8000) AS agencia_cobradora,
     motivo_devolucao::VARCHAR(8000) AS motivo_devolucao
-FROM {{ source('public', 'f_titulosquitados') }}
+FROM "operacoes"."public"."f_titulosquitados"
 
 
 UNION ALL
@@ -116,4 +116,4 @@ CAST(
     banco_cobrador::VARCHAR(8000) AS banco_cobrador,
     agencia_cobradora::VARCHAR(8000) AS agencia_cobradora,
     motivo_devolucao::VARCHAR(8000) AS motivo_devolucao
-FROM {{ source('public', 'f_titulosquitados_fidc') }}
+FROM "operacoes"."public"."f_titulosquitados_fidc"
