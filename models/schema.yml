@@ -29,6 +29,8 @@ sources:
         description: "Tabela de quitados"
       - name: f_titulosquitados_fidc
         description: "Tabela de quitados do FIDC"
+      - name: f_controle_mercadorias
+        description: "Tabela de controle de mercadorias"
 
 
       
