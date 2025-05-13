@@ -31,9 +31,13 @@ sources:
         description: "Tabela de quitados do FIDC"
       - name: f_controle_mercadorias
         description: "Tabela de controle de mercadorias"
+      - name: f_titulosprorrogados
+        description: "Tabela de títulos prorrogados"
+      - name: f_titulosprorrogados_fidc
+        description: "Tabela de títulos prorrogados do FIDC"
 
 
-      
 
-     
+
+
 
