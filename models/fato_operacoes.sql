@@ -1,7 +1,7 @@
 
 WITH base AS (
 
-SELECT 
+SELECT
 
     'Sec' AS Empresa, -- Adicionando a coluna Empresa com o valor 'Sec'
     cedente::VARCHAR(8000) AS CEDENTE,
@@ -25,7 +25,7 @@ FROM {{ source('public', 'f_operacoes') }}
 
 UNION ALL
 
-SELECT 
+SELECT
 
     'fidc' AS Empresa, -- Adicionando a coluna Empresa com o valor 'fidc'
     cedente::VARCHAR(8000) AS CEDENTE,
@@ -33,7 +33,7 @@ SELECT
     CAST(NULLIF(REGEXP_REPLACE(cpf_cnpj_cedente, '[^0-9]', '', 'g'), '') AS BIGINT) AS CPF_CNPJ_CEDENTE,
     CAST(NULLIF(REGEXP_REPLACE(REGEXP_REPLACE(prazo_medio, '[^0-9,]', '', 'g'), ',', '.', 'g'), '') AS DECIMAL(10,2)) AS PRAZO_MEDIO,
     CAST(NULLIF(REGEXP_REPLACE(REGEXP_REPLACE(valor_bruto, '[^0-9,]', '', 'g'), ',', '.', 'g'), '') AS DECIMAL(10,2)) AS VALOR_BRUTO,
-    NULL AS VALOR_DESAGIO,
+    CAST(NULLIF(REGEXP_REPLACE(REGEXP_REPLACE(valor_receita, '[^0-9,]', '', 'g'), ',', '.', 'g'), '') AS DECIMAL(10,2)) AS VALOR_DESAGIO,
     CAST(NULLIF(REGEXP_REPLACE(REGEXP_REPLACE(valor_liquido, '[^0-9,]', '', 'g'), ',', '.', 'g'), '') AS DECIMAL(10,2)) AS VALOR_LIQUIDO,
     NULL AS VALOR_RECOMPRA_PENDENCIA,
     CAST(NULLIF(REGEXP_REPLACE(REGEXP_REPLACE(cred_cedente, '[^0-9,]', '', 'g'), ',', '.', 'g'), '') AS DECIMAL(10,2)) AS CRED_CEDENTE,
