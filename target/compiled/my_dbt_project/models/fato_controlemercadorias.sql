@@ -1,7 +1,11 @@
 SELECT 
   NULLIF(numero_pedido, '')::VARCHAR(8000) AS operador,
 
-  CAST(SPLIT_PART(data_pedido, '/', 1) AS INT) AS numero_operacao,
+  CASE 
+    WHEN SPLIT_PART(data_pedido, '/', 1) ~ '^\d+$' THEN 
+      CAST(SPLIT_PART(data_pedido, '/', 1) AS INT)
+    ELSE NULL
+  END AS numero_operacao,
 
   CASE 
     WHEN cliente ~ '^\d{2}/\d{2}/\d{4}$' THEN TO_DATE(cliente, 'DD/MM/YYYY')
