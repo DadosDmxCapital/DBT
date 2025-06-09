@@ -35,6 +35,10 @@ sources:
         description: "Tabela de títulos prorrogados"
       - name: f_titulosprorrogados_fidc
         description: "Tabela de títulos prorrogados do FIDC"
+      - name: f_titulosrecomprados
+        description: "Tabela de títulos recomprados"
+      - name: f_titulosrecomprados_fidc
+        description: "Tabela de títulos recomprados do FIDC"
 
 
 
