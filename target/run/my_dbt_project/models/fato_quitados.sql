@@ -4,6 +4,7 @@
     
   as (
     SELECT
+    'sec' AS Empresa, -- Adicionando a coluna Empresa com o valor 'fidc'
     numero::VARCHAR(8000) AS numero,
     m::VARCHAR(8000) AS m,
     classe_risco::VARCHAR(8000) AS classe_risco,
@@ -65,6 +66,7 @@ UNION ALL
 
 
 SELECT
+    'fidc' AS Empresa,
     numero::VARCHAR(8000) AS numero,
     m::VARCHAR(8000) AS m,
     classe_risco::VARCHAR(8000) AS classe_risco,

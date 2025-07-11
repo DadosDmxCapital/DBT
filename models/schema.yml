@@ -39,6 +39,14 @@ sources:
         description: "Tabela de títulos recomprados"
       - name: f_titulosrecomprados_fidc
         description: "Tabela de títulos recomprados do FIDC"
+      - name: notioncrm
+        description: "Lista de CRm"
+      - name: f_titulosquitadosfraude
+        description: "Tabela quitadosfraude"
+      - name: f_titulosquitadosfraude_fidc
+        description: "Tabela quitadosfraude do FIDC"
+
+  
 
 
 
