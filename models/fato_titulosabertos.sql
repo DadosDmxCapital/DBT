@@ -42,7 +42,7 @@ SELECT
         AS DECIMAL(10,2)
     ) AS valor_total,
     CAST(
-        REPLACE(REGEXP_REPLACE(desagio, '[^0-9,]', '', 'g'), ',', '.')
+        NULLIF(REPLACE(REGEXP_REPLACE(desagio, '[^0-9,]', '', 'g'), ',', '.'), '')
         AS DECIMAL(10,2)
     ) AS desagio
 FROM {{ source('public', 'f_titulosemaberto') }}
@@ -72,30 +72,30 @@ SELECT
     sacado::VARCHAR(8000) AS sacado,
     situacao::VARCHAR(8000) AS situacao,
     tipo::VARCHAR(8000) AS tipo,
-CAST(
-    REPLACE(REGEXP_REPLACE(valor, '[^0-9,]', '', 'g'), ',', '.')
-    AS DECIMAL(10,2)
-) AS valor,
-CAST(
-    REPLACE(REGEXP_REPLACE(valor_juros, '[^0-9,]', '', 'g'), ',', '.')
-    AS DECIMAL(10,2)
-) AS valor_juros,
-CAST(
-    REPLACE(REGEXP_REPLACE(valor_multa, '[^0-9,]', '', 'g'), ',', '.')
-    AS DECIMAL(10,2)
-) AS valor_multa,
-CAST(
-    REPLACE(REGEXP_REPLACE(valor_tarifas, '[^0-9,]', '', 'g'), ',', '.')
-    AS DECIMAL(10,2)
-) AS valor_tarifas,
-CAST(
-    REPLACE(REGEXP_REPLACE(valor_total, '[^0-9,]', '', 'g'), ',', '.')
-    AS DECIMAL(10,2)
-) AS valor_total,
-CAST(
-    REPLACE(REGEXP_REPLACE(desagio, '[^0-9,]', '', 'g'), ',', '.')
-    AS DECIMAL(10,2)
-) AS desagio
+    CAST(
+        REPLACE(REGEXP_REPLACE(valor, '[^0-9,]', '', 'g'), ',', '.')
+        AS DECIMAL(10,2)
+    ) AS valor,
+    CAST(
+        REPLACE(REGEXP_REPLACE(valor_juros, '[^0-9,]', '', 'g'), ',', '.')
+        AS DECIMAL(10,2)
+    ) AS valor_juros,
+    CAST(
+        REPLACE(REGEXP_REPLACE(valor_multa, '[^0-9,]', '', 'g'), ',', '.')
+        AS DECIMAL(10,2)
+    ) AS valor_multa,
+    CAST(
+        REPLACE(REGEXP_REPLACE(valor_tarifas, '[^0-9,]', '', 'g'), ',', '.')
+        AS DECIMAL(10,2)
+    ) AS valor_tarifas,
+    CAST(
+        REPLACE(REGEXP_REPLACE(valor_total, '[^0-9,]', '', 'g'), ',', '.')
+        AS DECIMAL(10,2)
+    ) AS valor_total,
+    CAST(
+        NULLIF(REPLACE(REGEXP_REPLACE(desagio, '[^0-9,]', '', 'g'), ',', '.'), '')
+        AS DECIMAL(10,2)
+    ) AS desagio
 FROM {{ source('public', 'f_titulosemaberto_fidc') }}
 
 
