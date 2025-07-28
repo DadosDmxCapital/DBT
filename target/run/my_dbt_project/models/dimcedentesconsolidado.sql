@@ -70,7 +70,20 @@ SELECT
     dc.limite_boleto_garantido_clean AS limite_boleto_garantido,
     dc.limite_operacao_clean_clean AS limite_operacao_clean,
     
-    dc.risco_atual::VARCHAR(8000) AS risco_atual,
+    -- Lógica padronizada para risco_atual
+    CASE
+        WHEN dc.risco_atual IS NULL OR TRIM(dc.risco_atual) = '' THEN
+            df.risco_atual_fidc
+        WHEN df.risco_atual_fidc IS NULL OR TRIM(df.risco_atual_fidc) = '' THEN
+            dc.risco_atual
+        WHEN UPPER(TRIM(dc.risco_atual)) = UPPER(TRIM(df.risco_atual_fidc)) THEN
+            dc.risco_atual
+        ELSE
+            -- Se são diferentes e ambos têm valores, pode priorizar um ou concatenar
+            -- Aqui priorizando o valor da tabela principal (d_cedentes)
+            dc.risco_atual
+    END::VARCHAR(8000) AS risco_atual,
+    
     dc.saldo_clean AS saldo,
     dc.id_cedente::INT AS id_cedente
 
@@ -99,7 +112,8 @@ LEFT JOIN (
         CAST(REPLACE(REPLACE(REGEXP_REPLACE(limite_global, '[^0-9,.]', '', 'g'), '.', ''), ',', '.') AS DECIMAL(15, 2)) AS limite_global_fidc,
         CAST(REPLACE(REPLACE(REGEXP_REPLACE(limite_boleto_especial, '[^0-9,.]', '', 'g'), '.', ''), ',', '.') AS DECIMAL(15, 2)) AS limite_boleto_especial_fidc,
         CAST(REPLACE(REPLACE(REGEXP_REPLACE(limite_comissaria, '[^0-9,.]', '', 'g'), '.', ''), ',', '.') AS DECIMAL(15, 2)) AS limite_comissaria_fidc,
-        CAST(REPLACE(REPLACE(REGEXP_REPLACE(limite_tranche, '[^0-9,.]', '', 'g'), '.', ''), ',', '.') AS DECIMAL(15, 2)) AS limite_tranche_fidc
+        CAST(REPLACE(REPLACE(REGEXP_REPLACE(limite_tranche, '[^0-9,.]', '', 'g'), '.', ''), ',', '.') AS DECIMAL(15, 2)) AS limite_tranche_fidc,
+        risco_atual::VARCHAR(8000) AS risco_atual_fidc
     FROM "operacoes"."public"."d_cedentes_fidc"
 ) df ON CAST(NULLIF(REGEXP_REPLACE(dc.cpf_cnpj, '[^0-9]', '', 'g'), '') AS BIGINT) = df.cpf_cnpj
   );
